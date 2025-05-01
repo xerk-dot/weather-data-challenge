@@ -94,19 +94,29 @@ CREATE TABLE hrrr_forecasts (
 
 1. Create a virtual environment:
 ```bash
+cd new_structure
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 2. Install development dependencies:
 ```bash
-pip install -e .
+pip3 install -e .
 ```
 
 3. Try a command
 
 ```bash
-hrrr_ingest points.txt --variables surface_pressure,surface_roughness,visible_beam_downward_solar_flux,visible_diffuse_downward_solar_flux,temperature_2m,dewpoint_2m,relative_humidity_2m,u_component_wind_10m,v_component_wind_10m,u_component_wind_80m,v_component_wind_80m --num-hours 1
+hrrr_ingest data_points/points_01.txt --variables surface_pressure,surface_roughness,visible_beam_downward_solar_flux,visible_diffuse_downward_solar_flux,temperature_2m,dewpoint_2m,relative_humidity_2m,u_component_wind_10m,v_component_wind_10m,u_component_wind_80m,v_component_wind_80m --num-hours 3
+
+
+#Show the ingested data for all 11 required variables
+duckdb data.db "WITH stats AS (SELECT variable, COUNT(*) as count, ROUND(AVG(value), 2) as avg_value, ROUND(MIN(value), 2) as min_value, ROUND(MAX(value), 2) as max_value, COUNT(DISTINCT latitude) as num_points FROM hrrr_forecasts GROUP BY variable) SELECT * FROM stats ORDER BY variable;"
+
+
+#Show the data points for the three major US cities
+duckdb data.db "SELECT DISTINCT latitude, longitude FROM hrrr_forecasts ORDER BY latitude;"
+
 ```
 ### Testing
 

@@ -67,111 +67,130 @@ def find_nearest_grid_point(lat: float, lon: float, ds: xr.Dataset) -> Tuple[int
 def process_grib_file(grib_file: str, points: List[Tuple[float, float]], variables: List[str], run_time: datetime) -> List[Dict[str, Any]]:
     """Process a GRIB2 file and extract data for specified points and variables."""
     results = []
+    
+    # Group variables by their level types to minimize dataset openings
+    level_groups = {
+        'surface': [],
+        'heightAboveGround': []
+    }
+    
+    for var in variables:
+        level_info = VARIABLE_LEVELS.get(var)
+        if not level_info:
+            logger.error(f"No level information for variable {var}")
+            continue
+        level_type = level_info['typeOfLevel']
+        level_groups.setdefault(level_type, []).append((var, level_info))
+
+    # Process each level type group
+    for level_type, var_info_list in level_groups.items():
+        if not var_info_list:
+            continue
+            
+        try:
+            # For heightAboveGround, process each level separately
+            if level_type == "heightAboveGround":
+                # Group variables by their level
+                level_var_groups = {}
+                for var, info in var_info_list:
+                    level = info.get('level')
+                    if level is not None:
+                        level_var_groups.setdefault(level, []).append((var, info))
+                
+                # Process each level group separately
+                for level, level_vars in level_var_groups.items():
+                    results.extend(process_level_group(grib_file, points, level_vars, run_time, level_type, level))
+            else:
+                # Process surface variables together
+                results.extend(process_level_group(grib_file, points, var_info_list, run_time, level_type))
+            
+        except Exception as e:
+            logger.error(f"Error processing {level_type} variables: {str(e)}")
+            raise
+
+    return results
+
+def process_level_group(grib_file: str, points: List[Tuple[float, float]], 
+                       var_info_list: List[Tuple[str, dict]], run_time: datetime,
+                       level_type: str, level: int = None) -> List[Dict[str, Any]]:
+    """Process a group of variables with the same level type and level."""
+    results = []
+    
+    # Prepare filter kwargs
+    filter_kwargs = {
+        "typeOfLevel": level_type,
+        "stepType": "instant"
+    }
+    
+    # For heightAboveGround variables, we MUST specify the exact level
+    if level_type == "heightAboveGround":
+        if level is None:
+            logger.error("Level must be specified for heightAboveGround variables")
+            return []
+        filter_kwargs["level"] = level
+        
     try:
-        # Open the dataset with the correct level type for temperature_2m
+        # Open dataset with strict filtering
         ds = xr.open_dataset(
             grib_file,
             engine="cfgrib",
             backend_kwargs={
-                "filter_by_keys": {
-                    "typeOfLevel": "heightAboveGround",
-                    "level": 2
-                }
+                "filter_by_keys": filter_kwargs,
+                "indexpath": "",
+                "read_keys": ["paramId", "shortName", "typeOfLevel", "level", "stepType"]
             }
         )
         
-        logger.info(f"Available variables in dataset: {list(ds.variables.keys())}")
-        logger.info(f"Dataset info: {ds.attrs}")
+        logger.info(f"Available variables in dataset with filter {filter_kwargs}: {list(ds.variables.keys())}")
         
-        # Map our variable names to GRIB2 variable names
-        var_mapping = {
-            "temperature_2m": "t2m",
-            "dewpoint_2m": "d2m",
-            "relative_humidity_2m": "r2",
-            "specific_humidity_2m": "sh2",
-            "potential_temperature_2m": "pt"
-        }
-        
-        for var in variables:
-            # Get the GRIB2 variable name
-            grib_var = var_mapping.get(var)
+        # Process each variable in this group
+        for var_name, var_info in var_info_list:
+            grib_var = SUPPORTED_VARIABLES.get(var_name)
             if not grib_var:
-                logger.error(f"Variable {var} not found in mapping")
+                logger.error(f"No GRIB2 name mapping for variable {var_name}")
                 continue
                 
             if grib_var not in ds.variables:
-                logger.error(f"Variable {grib_var} not found in dataset")
+                logger.error(f"Variable {var_name} ({grib_var}) not found in dataset")
                 continue
                 
-            logger.info(f"Selected variable name: {grib_var}")
-            logger.info(f"Variable {grib_var} data shape: {ds[grib_var].shape}")
-            logger.info(f"Variable {grib_var} attributes: {ds[grib_var].attrs}")
-            logger.info(f"Variable {grib_var} dimensions: {ds[grib_var].dims}")
-            logger.info(f"Variable {grib_var} coordinates: {ds[grib_var].coords}")
-            
-            # Get the data array with all dimensions
             data_array = ds[grib_var]
-            
-            # Convert to numpy array for performance
             data_values = data_array.values
-            logger.info(f"Data array shape: {data_values.shape}")
-            logger.info(f"Data array type: {data_values.dtype}")
             
             for lat, lon in points:
                 try:
-                    logger.info(f"Attempting to access data at coordinates ({lat}, {lon})")
-                    
-                    # Find the nearest grid point
                     y_idx, x_idx = find_nearest_grid_point(lat, lon, ds)
-                    logger.info(f"Nearest grid point indices: ({y_idx}, {x_idx})")
-                    
-                    # Get the value at the nearest grid point using numpy array
                     value = float(data_values[y_idx, x_idx])
-                    logger.info(f"Extracted value: {value}")
                     
-                    # Get the actual coordinates of the grid point
-                    grid_lat = ds.latitude.values[y_idx, x_idx]
-                    grid_lon = ds.longitude.values[y_idx, x_idx]
-                    logger.info(f"Grid point coordinates: ({grid_lat}, {grid_lon})")
-                    
-                    # Get the valid time and convert to ISO format string
+                    # Get the valid time and step hours
                     valid_time = pd.Timestamp(ds.valid_time.values).isoformat()
-                    logger.info(f"Valid time: {valid_time}")
-                    
-                    # Get the step hours as an integer
                     step_hours = int(ds.step.values / np.timedelta64(1, 'h'))
-                    logger.info(f"Step hours: {step_hours}")
                     
-                    # Create the result dictionary
                     result = {
                         "valid_time_utc": valid_time,
                         "run_time_utc": run_time.isoformat(),
                         "latitude": lat,
                         "longitude": lon,
-                        "variable": var,
+                        "variable": var_name,
                         "value": value,
-                        "source_s3": f"s3://noaa-hrrr-bdp-pds/hrrr.{run_time.strftime('%Y%m%d')}/conus/hrrr.t{run_time.hour:02d}z.wrfsfcf{step_hours:02d}.grib2"
+                        "source_s3": f"s3://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.{run_time.strftime('%Y%m%d')}/conus/hrrr.t{run_time.hour:02d}z.wrfsfcf{step_hours:02d}.grib2"
                     }
                     
-                    # Check if we already have this data
                     if not check_existing_data(
                         run_time=run_time.isoformat(),
                         valid_time=valid_time,
                         latitude=lat,
                         longitude=lon,
-                        variable=var
+                        variable=var_name
                     ):
                         results.append(result)
-                        logger.info(f"Added result for point ({lat}, {lon}) at time {valid_time}")
-                    else:
-                        logger.info(f"Data already exists for point ({lat}, {lon}) at time {valid_time}")
-                    
+                        
                 except Exception as e:
-                    logger.error(f"Error processing point ({lat}, {lon}) for variable {var}: {str(e)}")
-                    raise  # Re-raise the exception to handle it at a higher level
+                    logger.error(f"Error processing point ({lat}, {lon}) for variable {var_name}: {str(e)}")
+                    continue
                     
     except Exception as e:
-        logger.error(f"Error processing GRIB file: {str(e)}")
+        logger.error(f"Error opening dataset with filter {filter_kwargs}: {str(e)}")
         raise
-        
+                
     return results 

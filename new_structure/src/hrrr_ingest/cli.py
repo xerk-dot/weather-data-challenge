@@ -25,13 +25,34 @@ def setup_logging(stream=None):
     )
     return logging.getLogger(__name__)
 
+def find_last_available_date():
+    """Find the most recent date that has complete data available."""
+    today = datetime.now()
+    # Start checking from yesterday to ensure complete data
+    check_date = today - timedelta(days=1)
+    
+    # Try up to 7 days back
+    for _ in range(7):
+        date_str = check_date.strftime('%Y%m%d')
+        # Check if first hour is available
+        if check_file_exists(date_str, 0):
+            # Check if last hour is available (complete dataset)
+            if check_file_exists(date_str, 47):
+                return check_date
+        check_date -= timedelta(days=1)
+    
+    # If no complete data found in last 7 days, use a known good date
+    return datetime(2025, 5, 1)
+
 def read_points_file(file_path: str) -> List[Tuple[float, float]]:
-    """Read points from file."""
+    """Read points from a file."""
     points = []
     with open(file_path, 'r') as f:
         for line in f:
-            lat, lon = map(float, line.strip().split(','))
-            points.append((lat, lon))
+            line = line.strip()
+            if line and not line.endswith('%'):  # Skip empty lines and comments
+                lat, lon = map(float, line.split(','))
+                points.append((lat, lon))
     return points
 
 @click.command()
@@ -66,9 +87,10 @@ def main(points_file: str, run_date: datetime,
     # Initialize database
     init_database()
     
-    # Set run date to today if not provided
+    # Set run date to last available date if not provided
     if not run_date:
-        run_date = datetime.now()
+        run_date = find_last_available_date()
+        logger.info(f"Using last available date: {run_date.strftime('%Y-%m-%d')}")
     
     # Set run time to 06z
     run_time = run_date.replace(hour=DEFAULT_RUN_HOUR, minute=0, second=0, microsecond=0)
@@ -102,8 +124,8 @@ def main(points_file: str, run_date: datetime,
                 logger.warning(f"No new data to insert for hour {forecast_hour}")
                 
         finally:
-            # Clean up temporary file
-            grib_file.unlink()
+            # Keep the file for inspection
+            pass
 
 if __name__ == '__main__':
     main() 

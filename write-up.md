@@ -93,6 +93,8 @@ logger.info(f"Data array type: {data_values.dtype}")
 
 The development process was iterative, with each error leading to a better understanding of the system. The most valuable lesson was the importance of understanding the data format and coordinate systems thoroughly before attempting to process the data. The AI assistant was particularly helpful in providing different approaches to solving problems, but often needed guidance in understanding the specific requirements of weather data processing.
 
+At the very end, I had the AI check each line in the comity-coding-challenge.md to make sure that every requirement was accounted for.
+
 ### Q: Describe how you would deploy your solution as a production service. How would you schedule the ingestion routines as new data becomes available? What data storage technology would you use to make the data more readily available to analysts and researchers? What monitoring would you put in place to ensure system correctness?
 **A:** [Your answer about production deployment strategy]
 
