@@ -1,10 +1,9 @@
 ## Q&A
 
 ### Q: How long did you spend working on the problem? What difficulties, if any, did you run into along the way?
-**A:** I started work at 1:10pm and finished at 5:00pm. Afterwards, I did some finishing edits to the documentation.
+**A:** I started work at 1:10pm and finished at 5:00pm. For the next hour, I did some finishing edits to the documentation.
 
-
-
+This was a tremendously fun project. Made me realize how much I need to pivot given how good AI is at python. While AI proved to be an incredibly capable coding partner, the experience highlighted that the real value lies in understanding the problem domain, making architectural decisions, and knowing how to effectively guide and correct AI's output. The most challenging aspects weren't in writing the code itself, but in ensuring the solution precisely met requirements, handled edge cases correctly, and maintained consistency across all components ("ETL pipelines").
 
 ### Q: Please list any AI assistants you used to complete your solution, along with a description of how you used them. Be specific about the key prompts that you used, any areas where you found the assistant got stuck and needed help, or places where you wrote skeleton code that you asked the assistant to complete, for example.
 **A:** Primarily Claude Sonnet 3.5, in Cursor.
@@ -13,12 +12,24 @@
 - Used AI to help set up the basic project structure and dependencies
 - Key prompt: "Help me create a Python project structure for a weather data ingestion system that uses DuckDB and xarray"
 - The AI provided a good starting point with the basic directory structure and requirements.txt
+The AI was particularly helpful in setting up the project structure, but required careful guidance to ensure it matched the exact requirements. For example:
+- Had to be specific about using DuckDB with the exact schema
+- Needed to ensure the CLI interface matched requirements exactly
+- Required multiple iterations to get the package structure right for proper installation
 
 #### GRIB2 File Processing Challenges
 The most complex part was handling the GRIB2 file format and coordinate systems. Key challenges:
 1. Longitude conversion between -180/180 and 0/360 systems
 2. Finding nearest grid points efficiently
 3. Handling the time dimension correctly
+4. Variable mapping complexities:
+   - Different GRIB2 packages use different naming conventions
+   - Had to map between human-readable names and GRIB2 shortNames
+   - Required careful validation of each variable's units and levels
+5. Memory management with large files:
+   - Initial implementations loaded entire files into memory
+   - Had to optimize to process only required variables
+   - Needed to handle file cleanup properly
 
 #### Major Errors and Solutions
 
@@ -386,70 +397,3 @@ The key improvements focus on:
 5. Implementing detailed progress tracking
 
 These changes would allow us to process multiple years of data efficiently while maintaining data quality and providing visibility into the backfill progress.
-
-## Prerequisites
-
-- Python 3.9 or higher
-- pip package manager
-- DuckDB
-- Required Python packages:
-  - xarray
-  - cfgrib
-  - duckdb
-  - click
-  - pandas
-  - numpy
-  - boto3
-
-## Running the Tool
-
-### Basic Usage
-```bash
-# Basic command with all default options
-hrrr_ingest data_points/points.txt
-
-# Using a specific run date
-hrrr_ingest data_points/points.txt --run-date 2025-04-30
-
-# Specifying number of forecast hours
-hrrr_ingest data_points/points.txt --num-hours 24
-
-# Selecting specific variables
-hrrr_ingest data_points/points.txt --variables temperature_2m,surface_pressure
-```
-
-### Common Use Cases
-
-1. Get today's temperature and humidity forecast:
-```bash
-hrrr_ingest data_points/points.txt \
-    --variables temperature_2m,relative_humidity_2m \
-    --num-hours 24
-```
-
-2. Get all variables for a specific date:
-```bash
-hrrr_ingest data_points/points.txt \
-    --run-date 2025-04-30
-```
-
-3. Get wind data at different heights:
-```bash
-hrrr_ingest data_points/points.txt \
-    --variables u_component_wind_10m,v_component_wind_10m,u_component_wind_80m,v_component_wind_80m \
-    --num-hours 48
-```
-
-4. Get solar flux data:
-```bash
-hrrr_ingest data_points/points.txt \
-    --variables visible_beam_downward_solar_flux,visible_diffuse_downward_solar_flux \
-    --run-date 2025-04-30
-```
-
-### Options
-
-- `points.txt`: Required. Path to file containing latitude,longitude pairs
-- `--run-date`: Optional. Format: YYYY-MM-DD. Defaults to last available date
-- `--variables`: Optional. Comma-separated list of variables. Defaults to all variables
-- `--num-hours`: Optional. Number of forecast hours (1-48). Defaults to 48
