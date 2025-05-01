@@ -1,0 +1,724 @@
+2025-05-01 13:58:37,960 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:58:38,225 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:58:43,480 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:58:44,859 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 13:58:44,859 - process - INFO - Dataset info: None
+2025-05-01 13:58:44,859 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 13:58:44,859 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 13:58:44,871 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 13:58:44,873 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 13:59:21,136 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:59:21,403 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:59:26,819 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 13:59:28,176 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 13:59:28,177 - process - INFO - Dataset info: None
+2025-05-01 13:59:28,177 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 13:59:28,177 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 13:59:28,190 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 13:59:28,192 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:00:19,655 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:00:19,930 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:00:25,565 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:00:27,029 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:00:27,030 - process - INFO - Dataset info: None
+2025-05-01 14:00:27,030 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:00:27,030 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:00:27,045 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:00:27,048 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:01:16,892 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:17,170 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:22,845 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:24,349 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:01:24,350 - process - INFO - Dataset info: None
+2025-05-01 14:01:24,350 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:01:24,350 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:01:24,366 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:01:24,370 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:01:50,372 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:50,647 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:55,587 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:01:56,936 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:01:56,937 - process - INFO - Dataset info: None
+2025-05-01 14:01:56,937 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:01:56,937 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:01:56,949 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:01:56,954 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:02:32,201 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:02:32,466 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:02:37,672 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:02:39,098 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:02:39,099 - process - INFO - Dataset info: None
+2025-05-01 14:02:39,099 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:02:39,099 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:02:39,112 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:02:39,115 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:03:16,141 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:03:16,413 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:03:21,513 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:03:22,862 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:03:22,863 - process - INFO - Dataset info: None
+2025-05-01 14:03:22,863 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:03:22,863 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:03:22,878 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:03:22,880 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:04:07,303 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:07,600 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:12,500 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:13,805 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:04:13,806 - process - INFO - Dataset info: None
+2025-05-01 14:04:13,806 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:04:13,806 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:04:13,818 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:04:13,820 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:04:51,847 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:52,118 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:56,272 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:04:57,691 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:04:57,692 - process - INFO - Dataset info: None
+2025-05-01 14:04:57,692 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:04:57,692 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:04:57,709 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:04:57,713 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:05:30,010 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:05:30,291 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:05:35,516 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:05:36,834 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:05:36,835 - process - INFO - Dataset info: None
+2025-05-01 14:05:36,835 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:05:36,835 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:05:36,850 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:05:36,852 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:06:57,687 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:06:57,991 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:07:02,628 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:07:04,032 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:07:04,032 - process - INFO - Dataset info: None
+2025-05-01 14:07:04,032 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:07:04,032 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:07:04,045 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:07:04,049 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:07:31,023 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:07:31,302 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:07:35,908 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:07:37,289 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:07:37,289 - process - INFO - Dataset info: None
+2025-05-01 14:07:37,289 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:07:37,289 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:07:37,300 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:07:37,304 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:08:15,056 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:08:15,331 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:08:19,541 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:08:20,911 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:08:20,912 - process - INFO - Dataset info: None
+2025-05-01 14:08:20,912 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:08:20,912 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:08:20,924 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:08:20,926 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:09:17,215 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:09:17,496 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:09:22,994 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:09:24,429 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:09:24,430 - process - INFO - Dataset info: None
+2025-05-01 14:09:24,430 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:09:24,430 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:09:24,446 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:09:24,457 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:10:21,674 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:10:21,946 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:10:27,027 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:10:28,462 - process - INFO - Available variables in dataset for temperature_2m: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:10:28,462 - process - INFO - Dataset info: None
+2025-05-01 14:10:28,462 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:10:28,462 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:10:28,479 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: xarray objects are not yet supported in the `out` argument for ufuncs. As an alternative, consider explicitly converting xarray objects to NumPy arrays (e.g., with `.values`).
+2025-05-01 14:10:28,482 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:11:27,070 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:11:27,347 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:11:45,910 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:11:46,177 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:11:51,142 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:11:52,571 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:11:52,572 - root - INFO - Dataset info: None
+2025-05-01 14:11:52,572 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:11:52,572 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:11:52,619 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:11:52,620 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:12:06,388 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:06,668 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:11,064 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:12,595 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:12:12,596 - root - INFO - Dataset info: None
+2025-05-01 14:12:12,596 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:12:12,596 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:12:12,639 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:12:12,640 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:12:24,761 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:25,035 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:30,085 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:31,466 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:12:31,466 - root - INFO - Dataset info: None
+2025-05-01 14:12:31,466 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:12:31,466 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:12:31,509 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:12:31,510 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:12:41,589 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:41,856 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:46,590 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:12:47,933 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:12:47,933 - root - INFO - Dataset info: None
+2025-05-01 14:12:47,933 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:12:47,933 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:12:47,973 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:12:47,973 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:13:00,186 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:00,456 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:05,538 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:06,905 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:13:06,906 - root - INFO - Dataset info: None
+2025-05-01 14:13:06,906 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:13:06,906 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:13:06,944 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:13:06,944 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:13:20,408 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:20,675 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:25,611 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:13:26,958 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:13:26,958 - root - INFO - Dataset info: None
+2025-05-01 14:13:26,959 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:13:26,959 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:13:27,000 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:13:27,000 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:14:00,388 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:00,661 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:05,464 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:06,803 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:14:06,803 - root - INFO - Dataset info: None
+2025-05-01 14:14:06,803 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:14:06,803 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:14:06,844 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:14:06,844 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:14:23,060 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:23,359 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:28,407 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:29,852 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:14:29,852 - root - INFO - Dataset info: None
+2025-05-01 14:14:29,853 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:14:29,853 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:14:29,899 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:14:29,907 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:14:45,750 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:46,024 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:50,278 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:14:51,691 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:14:51,692 - root - INFO - Dataset info: None
+2025-05-01 14:14:51,692 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:14:51,692 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:14:51,735 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:14:51,735 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:15:03,542 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:15:03,812 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:15:08,971 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:15:10,333 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:15:10,333 - root - INFO - Dataset info: None
+2025-05-01 14:15:10,333 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:15:10,333 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:15:10,373 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:15:10,373 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:15:55,106 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:15:55,384 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:01,261 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:02,686 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:16:02,686 - root - INFO - Dataset info: None
+2025-05-01 14:16:02,686 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:16:02,686 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:16:02,733 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:16:02,734 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:16:16,175 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:16,447 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:21,669 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:23,079 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:16:23,079 - root - INFO - Dataset info: None
+2025-05-01 14:16:23,079 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:16:23,079 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:16:23,122 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:16:23,123 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:16:36,534 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:36,830 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:41,417 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:42,824 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:16:42,825 - root - INFO - Dataset info: None
+2025-05-01 14:16:42,825 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:16:42,825 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:16:42,869 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:16:42,870 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:16:55,237 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:16:55,503 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:00,160 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:01,598 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:17:01,598 - root - INFO - Dataset info: None
+2025-05-01 14:17:01,598 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:17:01,598 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:17:01,641 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:17:01,642 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:17:15,540 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:15,813 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:20,748 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:22,244 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:17:22,245 - root - INFO - Dataset info: None
+2025-05-01 14:17:22,245 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:17:22,245 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:17:22,285 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:17:22,285 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:17:34,995 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:35,259 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:40,236 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:41,647 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:17:41,647 - root - INFO - Dataset info: None
+2025-05-01 14:17:41,647 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:17:41,647 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:17:41,688 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:17:41,688 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:17:53,829 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:54,103 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:58,534 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:17:59,866 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:17:59,866 - root - INFO - Dataset info: None
+2025-05-01 14:17:59,866 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:17:59,866 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:17:59,908 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:17:59,909 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:18:13,253 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:13,415 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:18,914 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:20,227 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:18:20,227 - root - INFO - Dataset info: None
+2025-05-01 14:18:20,227 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:18:20,227 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:18:20,267 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:18:20,268 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:18:36,794 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:37,068 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:42,385 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:18:43,697 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:18:43,698 - root - INFO - Dataset info: None
+2025-05-01 14:18:43,698 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:18:43,698 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:18:43,739 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:18:43,740 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:19:17,353 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:19:17,616 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:19:23,051 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:19:24,373 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:19:24,374 - root - INFO - Dataset info: None
+2025-05-01 14:19:24,374 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:19:24,374 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:19:24,416 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:19:24,417 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:28:24,448 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:28:24,729 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:28:30,299 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:28:31,687 - root - INFO - Available variables in dataset for temperature_2m: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:28:31,687 - root - INFO - Dataset info: None
+2025-05-01 14:28:31,687 - root - INFO - Variable unknown data shape: (1059, 1799)
+2025-05-01 14:28:31,687 - root - INFO - Variable unknown attributes: {'GRIB_paramId': 0, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'unknown', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': 'unknown', 'GRIB_shortName': 'unknown', 'GRIB_units': 'unknown', 'long_name': 'unknown', 'units': 'unknown', 'standard_name': 'unknown'}
+2025-05-01 14:28:31,726 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:28:31,726 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:30:25,332 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:30:25,603 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:30:30,446 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:30:30,979 - root - INFO - Available variables in dataset for temperature_2m: []
+2025-05-01 14:30:30,979 - root - INFO - Dataset info: None
+2025-05-01 14:30:30,979 - root - ERROR - Could not find variable t2m in dataset
+2025-05-01 14:30:30,979 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:31:08,607 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:08,877 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:13,241 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:14,133 - root - ERROR - Error processing variable temperature_2m: multiple values for unique key, try re-open the file with one of:
+    filter_by_keys={'typeOfLevel': 'atmosphere'}
+    filter_by_keys={'typeOfLevel': 'cloudTop'}
+    filter_by_keys={'typeOfLevel': 'surface'}
+    filter_by_keys={'typeOfLevel': 'heightAboveGround'}
+    filter_by_keys={'typeOfLevel': 'isothermal'}
+    filter_by_keys={'typeOfLevel': 'isobaricInhPa'}
+    filter_by_keys={'typeOfLevel': 'pressureFromGroundLayer'}
+    filter_by_keys={'typeOfLevel': 'sigmaLayer'}
+    filter_by_keys={'typeOfLevel': 'meanSea'}
+    filter_by_keys={'typeOfLevel': 'heightAboveGroundLayer'}
+    filter_by_keys={'typeOfLevel': 'sigma'}
+    filter_by_keys={'typeOfLevel': 'atmosphereSingleLayer'}
+    filter_by_keys={'typeOfLevel': 'depthBelowLand'}
+    filter_by_keys={'typeOfLevel': 'isobaricLayer'}
+    filter_by_keys={'typeOfLevel': 'boundaryLayerCloudLayer'}
+    filter_by_keys={'typeOfLevel': 'lowCloudLayer'}
+    filter_by_keys={'typeOfLevel': 'middleCloudLayer'}
+    filter_by_keys={'typeOfLevel': 'highCloudLayer'}
+    filter_by_keys={'typeOfLevel': 'cloudCeiling'}
+    filter_by_keys={'typeOfLevel': 'cloudBase'}
+    filter_by_keys={'typeOfLevel': 'nominalTop'}
+    filter_by_keys={'typeOfLevel': 'isothermZero'}
+    filter_by_keys={'typeOfLevel': 'highestTroposphericFreezing'}
+    filter_by_keys={'typeOfLevel': 'adiabaticCondensation'}
+    filter_by_keys={'typeOfLevel': 'equilibrium'}
+    filter_by_keys={'typeOfLevel': 'freeConvection'}
+    filter_by_keys={'typeOfLevel': 'unknown'}
+2025-05-01 14:31:14,133 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:31:47,575 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:47,837 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:53,149 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:31:54,555 - root - INFO - Available variables in dataset: ['unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:31:54,555 - root - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:31 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpmxnjwotb.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:31:54,555 - root - INFO - Selected variable name: t2m
+2025-05-01 14:31:54,556 - root - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:31:54,556 - root - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:31:54,556 - root - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:31:54,559 - root - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:31:54,559 - root - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:31:54,559 - root - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: "no index found for coordinate 'latitude'"
+2025-05-01 14:31:54,560 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:32:24,608 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:32:24,880 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:32:30,089 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:32:31,489 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:32:31,489 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:32 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpav9fthd6.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:32:31,489 - process - ERROR - Variable temperature_2m not found in dataset
+2025-05-01 14:32:31,489 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:33:00,445 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:00,715 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:04,920 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:35,342 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:35,622 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:40,998 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:33:42,426 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:33:42,426 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:33 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp53yd8rz8.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:33:42,426 - process - INFO - Selected variable name: t2m
+2025-05-01 14:33:42,426 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:33:42,426 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:33:42,426 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:33:42,427 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:33:42,464 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:33:42,498 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: Unknown format code 'd' for object of type 'float'
+2025-05-01 14:33:42,498 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:34:09,010 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:09,280 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:13,742 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:15,084 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:34:15,084 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:34 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp89mfyz62.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:34:15,084 - process - INFO - Selected variable name: t2m
+2025-05-01 14:34:15,084 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:34:15,084 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:34:15,084 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:34:15,085 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:34:15,122 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:34:15,135 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:34:15,136 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:34:38,345 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:38,613 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:43,425 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:34:44,755 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:34:44,755 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:34 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpmp8_jkeu.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:34:44,755 - process - INFO - Selected variable name: t2m
+2025-05-01 14:34:44,756 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:34:44,756 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:34:44,756 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:34:44,756 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:34:44,790 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:34:44,819 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:34:44,819 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:35:07,342 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:07,611 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:12,525 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:13,892 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:35:13,893 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:35 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp7wq7a_66.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:35:13,893 - process - INFO - Selected variable name: t2m
+2025-05-01 14:35:13,893 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:35:13,893 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:35:13,893 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:35:13,894 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:35:13,929 - process - INFO - Data array shape: (1059, 1799)
+2025-05-01 14:35:13,929 - process - INFO - Data array type: <class 'numpy.ndarray'>
+2025-05-01 14:35:13,929 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:35:13,954 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:35:13,955 - process - INFO - Data array shape before indexing: (1059, 1799)
+2025-05-01 14:35:13,955 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:35:13,955 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:35:13,955 - process - INFO - Valid time: 2025-05-01T06:00:00.000000000
+2025-05-01 14:35:13,957 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:35:13,957 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:35:43,466 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:43,756 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:48,946 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:35:50,321 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:35:50,321 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:35 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpvn2rsjwm.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:35:50,321 - process - INFO - Selected variable name: t2m
+2025-05-01 14:35:50,321 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:35:50,321 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:35:50,321 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:35:50,322 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:35:50,322 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:35:50,346 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:35:50,382 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:35:50,382 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:35:50,382 - process - INFO - Valid time: 2025-05-01T06:00:00.000000000
+2025-05-01 14:35:50,384 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:35:50,384 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:37:12,679 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:37:12,953 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:37:17,492 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:37:18,881 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:37:18,881 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:37 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpxypjnf47.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:37:18,881 - process - INFO - Selected variable name: t2m
+2025-05-01 14:37:18,881 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:37:18,881 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:37:18,881 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:37:18,882 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:37:18,882 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:37:18,910 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:37:18,947 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:37:18,947 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:37:18,948 - process - INFO - Valid time: 2025-05-01T06:00:00.000000000
+2025-05-01 14:37:18,949 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:37:18,950 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:37:55,490 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:37:55,815 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:38:00,814 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:38:02,265 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:38:02,265 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:38 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp_zdvu1mf.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:38:02,266 - process - INFO - Selected variable name: t2m
+2025-05-01 14:38:02,266 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:38:02,266 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:38:02,266 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:38:02,267 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:38:02,267 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:38:02,294 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:38:02,329 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:38:02,330 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:38:02,330 - process - INFO - Valid time: 2025-05-01T06:00:00.000000000
+2025-05-01 14:38:02,331 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:38:02,331 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:38:32,226 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:38:32,492 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:38:36,099 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:38:37,474 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:38:37,474 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:38 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpeszbyxle.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:38:37,474 - process - INFO - Selected variable name: t2m
+2025-05-01 14:38:37,474 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:38:37,474 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:38:37,474 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:38:37,475 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:38:37,475 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:38:37,505 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:38:37,540 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:38:37,540 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:38:37,540 - process - INFO - Valid time: 2025-05-01T06:00:00.000000000
+2025-05-01 14:38:37,541 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:38:37,541 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:40:11,285 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:40:11,552 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:40:16,941 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:40:18,316 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:40:18,316 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:40 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp32lfni7v.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:40:18,316 - process - INFO - Selected variable name: t2m
+2025-05-01 14:40:18,316 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:40:18,316 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:40:18,316 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:40:18,317 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:40:18,317 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:40:18,347 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:40:18,383 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:40:18,383 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:40:18,384 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:40:18,384 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:40:18,385 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:40:58,799 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:40:59,055 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:41:02,701 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:41:04,018 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:41:04,018 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:41 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmp2hu_zi2j.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:41:04,018 - process - INFO - Selected variable name: t2m
+2025-05-01 14:41:04,018 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:41:04,018 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:41:04,018 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:41:04,019 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:41:04,054 - process - INFO - Data array shape: (1059, 1799)
+2025-05-01 14:41:04,055 - process - INFO - Data array type: float32
+2025-05-01 14:41:04,055 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:41:04,086 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:41:04,086 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:41:04,087 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:41:04,087 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:41:04,088 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:41:04,088 - __main__ - WARNING - No new data to insert for hour 0
+2025-05-01 14:42:07,378 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:42:07,649 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:42:12,451 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:42:13,803 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:42:13,804 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:42 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpwf0kr9mi.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:42:13,804 - process - INFO - Selected variable name: t2m
+2025-05-01 14:42:13,804 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:42:13,804 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:42:13,804 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:42:13,805 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:42:13,839 - process - INFO - Data array shape: (1059, 1799)
+2025-05-01 14:42:13,839 - process - INFO - Data array type: float32
+2025-05-01 14:42:13,839 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:42:13,870 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:42:13,870 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:42:13,870 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:42:13,871 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:42:13,872 - process - ERROR - Error processing point (31.0069, -88.0103) for variable temperature_2m: invalid index to scalar variable.
+2025-05-01 14:42:13,872 - process - ERROR - Error processing GRIB file: invalid index to scalar variable.
+2025-05-01 14:42:54,782 - download - INFO - Checking for file: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:42:55,052 - download - INFO - Attempting to download: s3://noaa-hrrr-bdp-pds/hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:42:59,811 - download - INFO - Successfully downloaded hrrr.20250501/conus/hrrr.t06z.wrfsfcf00.grib2
+2025-05-01 14:43:01,184 - process - INFO - Available variables in dataset: ['time', 'step', 'heightAboveGround', 'latitude', 'longitude', 'valid_time', 'unknown', 't2m', 'pt', 'sh2', 'd2m', 'r2']
+2025-05-01 14:43:01,184 - process - INFO - Dataset info: {'GRIB_edition': 2, 'GRIB_centre': 'kwbc', 'GRIB_centreDescription': 'US National Weather Service - NCEP', 'GRIB_subCentre': 0, 'Conventions': 'CF-1.7', 'institution': 'US National Weather Service - NCEP', 'history': '2025-05-01T14:43 GRIB to CDM+CF via cfgrib-0.9.15.0/ecCodes-2.41.0 with {"source": "../../../../../../../../var/folders/nw/st71n59966q8hj3dztmmn5000000gn/T/tmpjvn56u4i.grib2", "filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 2}, "encode_cf": ["parameter", "time", "geography", "vertical"]}'}
+2025-05-01 14:43:01,184 - process - INFO - Selected variable name: t2m
+2025-05-01 14:43:01,184 - process - INFO - Variable t2m data shape: (1059, 1799)
+2025-05-01 14:43:01,184 - process - INFO - Variable t2m attributes: {'GRIB_paramId': 167, 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': 1905141, 'GRIB_typeOfLevel': 'heightAboveGround', 'GRIB_stepUnits': 1, 'GRIB_stepType': 'instant', 'GRIB_gridType': 'lambert', 'GRIB_uvRelativeToGrid': 1, 'GRIB_DxInMetres': 3000.0, 'GRIB_DyInMetres': 3000.0, 'GRIB_LaDInDegrees': 38.5, 'GRIB_Latin1InDegrees': 38.5, 'GRIB_Latin2InDegrees': 38.5, 'GRIB_LoVInDegrees': 262.5, 'GRIB_NV': 0, 'GRIB_Nx': 1799, 'GRIB_Ny': 1059, 'GRIB_cfName': 'air_temperature', 'GRIB_cfVarName': 't2m', 'GRIB_gridDefinitionDescription': 'Lambert Conformal can be secant or tangent, conical or bipolar', 'GRIB_iScansNegatively': 0, 'GRIB_jPointsAreConsecutive': 0, 'GRIB_jScansPositively': 1, 'GRIB_latitudeOfFirstGridPointInDegrees': 21.138123, 'GRIB_latitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_longitudeOfFirstGridPointInDegrees': 237.280472, 'GRIB_longitudeOfSouthernPoleInDegrees': 0.0, 'GRIB_missingValue': 3.4028234663852886e+38, 'GRIB_name': '2 metre temperature', 'GRIB_shortName': '2t', 'GRIB_units': 'K', 'long_name': '2 metre temperature', 'units': 'K', 'standard_name': 'air_temperature'}
+2025-05-01 14:43:01,184 - process - INFO - Variable t2m dimensions: ('y', 'x')
+2025-05-01 14:43:01,186 - process - INFO - Variable t2m coordinates: Coordinates:
+    time               datetime64[ns] 8B ...
+    step               timedelta64[ns] 8B ...
+    heightAboveGround  float64 8B ...
+    latitude           (y, x) float64 15MB ...
+    longitude          (y, x) float64 15MB ...
+    valid_time         datetime64[ns] 8B ...
+2025-05-01 14:43:01,222 - process - INFO - Data array shape: (1059, 1799)
+2025-05-01 14:43:01,222 - process - INFO - Data array type: float32
+2025-05-01 14:43:01,222 - process - INFO - Attempting to access data at coordinates (31.0069, -88.0103)
+2025-05-01 14:43:01,252 - process - INFO - Nearest grid point indices: (266, 1203)
+2025-05-01 14:43:01,252 - process - INFO - Extracted value: 294.8513488769531
+2025-05-01 14:43:01,253 - process - INFO - Grid point coordinates: (30.999422023798193, 272.0003296273354)
+2025-05-01 14:43:01,253 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,255 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,275 - process - INFO - Added result for point (31.0069, -88.0103) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,275 - process - INFO - Attempting to access data at coordinates (31.7569, -106.375)
+2025-05-01 14:43:01,305 - process - INFO - Nearest grid point indices: (292, 618)
+2025-05-01 14:43:01,305 - process - INFO - Extracted value: 292.4763488769531
+2025-05-01 14:43:01,305 - process - INFO - Grid point coordinates: (31.75260203822245, 253.6253454507068)
+2025-05-01 14:43:01,305 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,305 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,314 - process - INFO - Added result for point (31.7569, -106.375) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,314 - process - INFO - Attempting to access data at coordinates (32.583889, -86.28306)
+2025-05-01 14:43:01,342 - process - INFO - Nearest grid point indices: (331, 1250)
+2025-05-01 14:43:01,343 - process - INFO - Extracted value: 294.2888488769531
+2025-05-01 14:43:01,343 - process - INFO - Grid point coordinates: (32.58903643487726, 273.7029469878208)
+2025-05-01 14:43:01,343 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,343 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,351 - process - INFO - Added result for point (32.583889, -86.28306) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,351 - process - INFO - Attempting to access data at coordinates (32.6017, -87.7811)
+2025-05-01 14:43:01,382 - process - INFO - Nearest grid point indices: (326, 1204)
+2025-05-01 14:43:01,382 - process - INFO - Extracted value: 294.3513488769531
+2025-05-01 14:43:01,382 - process - INFO - Grid point coordinates: (32.59579399019073, 272.2289646023739)
+2025-05-01 14:43:01,382 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,383 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,391 - process - INFO - Added result for point (32.6017, -87.7811) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,391 - process - INFO - Attempting to access data at coordinates (32.6189, -86.2548)
+2025-05-01 14:43:01,418 - process - INFO - Nearest grid point indices: (332, 1251)
+2025-05-01 14:43:01,418 - process - INFO - Extracted value: 294.2263488769531
+2025-05-01 14:43:01,418 - process - INFO - Grid point coordinates: (32.612412755604254, 273.7384439228883)
+2025-05-01 14:43:01,418 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,419 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,427 - process - INFO - Added result for point (32.6189, -86.2548) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,427 - process - INFO - Attempting to access data at coordinates (33.2553, -87.4495)
+2025-05-01 14:43:01,455 - process - INFO - Nearest grid point indices: (352, 1211)
+2025-05-01 14:43:01,456 - process - INFO - Extracted value: 294.9763488769531
+2025-05-01 14:43:01,456 - process - INFO - Grid point coordinates: (33.26983585377296, 272.5408188589173)
+2025-05-01 14:43:01,456 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,456 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,464 - process - INFO - Added result for point (33.2553, -87.4495) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,465 - process - INFO - Attempting to access data at coordinates (33.425878, -86.33755)
+2025-05-01 14:43:01,492 - process - INFO - Nearest grid point indices: (362, 1245)
+2025-05-01 14:43:01,493 - process - INFO - Extracted value: 294.3513488769531
+2025-05-01 14:43:01,493 - process - INFO - Grid point coordinates: (33.431763221460834, 273.6643338044745)
+2025-05-01 14:43:01,493 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,493 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,501 - process - INFO - Added result for point (33.425878, -86.33755) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,501 - process - INFO - Attempting to access data at coordinates (33.458665, -87.35682)
+2025-05-01 14:43:01,531 - process - INFO - Nearest grid point indices: (359, 1213)
+2025-05-01 14:43:01,531 - process - INFO - Extracted value: 295.1013488769531
+2025-05-01 14:43:01,531 - process - INFO - Grid point coordinates: (33.450938968786446, 272.6294097260709)
+2025-05-01 14:43:01,532 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,532 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,540 - process - INFO - Added result for point (33.458665, -87.35682) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,540 - process - INFO - Attempting to access data at coordinates (33.7845, -86.0524)
+2025-05-01 14:43:01,567 - process - INFO - Nearest grid point indices: (376, 1252)
+2025-05-01 14:43:01,567 - process - INFO - Extracted value: 294.0388488769531
+2025-05-01 14:43:01,567 - process - INFO - Grid point coordinates: (33.782229236065646, 273.9439353282118)
+2025-05-01 14:43:01,567 - process - INFO - Valid time: 2025-05-01T06:00:00
+2025-05-01 14:43:01,567 - process - INFO - Step hours: 0
+2025-05-01 14:43:01,575 - process - INFO - Added result for point (33.7845, -86.0524) at time 2025-05-01T06:00:00
+2025-05-01 14:43:01,601 - __main__ - INFO - Successfully processed 9 records for hour 0
