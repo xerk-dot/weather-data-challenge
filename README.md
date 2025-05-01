@@ -2,6 +2,20 @@
 
 A command-line tool for ingesting and storing HRRR (High-Resolution Rapid Refresh) weather forecast data from NOAA.
 
+## Prerequisites
+
+- Python 3.9 or higher
+- pip package manager
+- Required Python packages:
+  - xarray
+  - cfgrib
+  - duckdb
+  - click
+  - pandas
+  - numpy
+  - boto3
+  - eccodes (for GRIB file processing)
+
 ## Features
 
 - Downloads HRRR forecast data from AWS S3
@@ -13,13 +27,13 @@ A command-line tool for ingesting and storing HRRR (High-Resolution Rapid Refres
 
 ## Installation
 
-1. Clone the repository, set up virtual environment:```bash
+1. Clone the repository and set up virtual environment:
+```bash
 git clone <repository-url>
-cd src/hrrr_ingest
+cd new_structure
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-
 
 2. Install dependencies:
 ```bash
@@ -58,18 +72,58 @@ hrrr-ingest points.txt [--run-date YYYY-MM-DD] [--variables var1,var2,...] [--nu
 - `u_component_wind_80m`
 - `v_component_wind_80m`
 
-### Example
+## Running the Tool
 
+### Basic Usage
 ```bash
-# Ingest all variables for today's forecast
-hrrr-ingest points.txt
+# Basic command with all default options
+hrrr_ingest data_points/points.txt
 
-# Ingest specific variables for a given date
-hrrr-ingest points.txt --run-date 2023-04-01 --variables temperature_2m,relative_humidity_2m
+# Using a specific run date
+hrrr_ingest data_points/points.txt --run-date 2025-04-30
 
-# Ingest only 24 hours of forecast data
-hrrr-ingest points.txt --num-hours 24
+# Specifying number of forecast hours
+hrrr_ingest data_points/points.txt --num-hours 24
+
+# Selecting specific variables
+hrrr_ingest data_points/points.txt --variables temperature_2m,surface_pressure
 ```
+
+### Common Use Cases
+
+1. Get today's temperature and humidity forecast:
+```bash
+hrrr_ingest data_points/points.txt \
+    --variables temperature_2m,relative_humidity_2m \
+    --num-hours 24
+```
+
+2. Get all variables for a specific date:
+```bash
+hrrr_ingest data_points/points.txt \
+    --run-date 2025-04-30
+```
+
+3. Get wind data at different heights:
+```bash
+hrrr_ingest data_points/points.txt \
+    --variables u_component_wind_10m,v_component_wind_10m,u_component_wind_80m,v_component_wind_80m \
+    --num-hours 48
+```
+
+4. Get solar flux data:
+```bash
+hrrr_ingest data_points/points.txt \
+    --variables visible_beam_downward_solar_flux,visible_diffuse_downward_solar_flux \
+    --run-date 2025-04-30
+```
+
+### Options
+
+- `points.txt`: Required. Path to file containing latitude,longitude pairs
+- `--run-date`: Optional. Format: YYYY-MM-DD. Defaults to last available date
+- `--variables`: Optional. Comma-separated list of variables. Defaults to all variables
+- `--num-hours`: Optional. Number of forecast hours (1-48). Defaults to 48
 
 ## Database Schema
 
@@ -142,8 +196,6 @@ This means that:
 - If you run the same command multiple times with the same parameters, it will only insert new data that doesn't already exist
 - The database will reject any duplicate entries due to the primary key constraint
 - The application will skip processing points that already have data, making the process more efficient
-
-cd new_structure && PYTHONPATH=src python3 -m hrrr_ingest.cli points.txt --variables temperature_2m,dewpoint_2m --num-hours 1
 
 
 
