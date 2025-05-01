@@ -46,4 +46,4 @@ TABLE_NAME = "hrrr_forecasts"
 
 def get_s3_path(date: str, forecast_hour: int) -> str:
     """Generate S3 path for HRRR data file."""
-    return f"s3://{HRRR_BUCKET}/{HRRR_PREFIX}.{date}/conus/hrrr.t{forecast_hour:02d}z.wrfsfcf00.grib2" 
+    return f"s3://{HRRR_BUCKET}/hrrr.{date}/conus/hrrr.t06z.wrfsfcf{forecast_hour:02d}.grib2" 

@@ -8,6 +8,7 @@ import logging
 from datetime import datetime, timedelta
 import pandas as pd
 
+from . import config
 from .config import SUPPORTED_VARIABLES
 from .database import check_existing_data
 
@@ -173,7 +174,7 @@ def process_level_group(grib_file: str, points: List[Tuple[float, float]],
                         "longitude": lon,
                         "variable": var_name,
                         "value": value,
-                        "source_s3": f"s3://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.{run_time.strftime('%Y%m%d')}/conus/hrrr.t{run_time.hour:02d}z.wrfsfcf{step_hours:02d}.grib2"
+                        "source_s3": f"s3://noaa-hrrr-bdp-pds/hrrr.{run_time.strftime('%Y%m%d')}/conus/hrrr.t{run_time.hour:02d}z.wrfsfcf{step_hours:02d}.grib2"
                     }
                     
                     if not check_existing_data(
