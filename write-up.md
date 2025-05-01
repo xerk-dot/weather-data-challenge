@@ -87,6 +87,22 @@ logger.info(f"Data array type: {data_values.dtype}")
 1. Initially struggled with the longitude conversion issue
 2. Had difficulty understanding the time dimension handling
 3. Needed multiple iterations to get the data access pattern correct
+4. Had significant issues with the S3 URL format:
+   - Initially included `.s3.amazonaws.com` incorrectly
+   - Required multiple iterations to get the exact format right
+   - Needed to update both the database schema and code to match requirements
+5. Struggled with variable height levels:
+   - Initially missed the distinction between 2m, 10m, and 80m measurements
+   - Had to refactor the code to handle different height levels properly
+   - Required multiple attempts to get the GRIB2 filter parameters correct
+6. Database schema evolution:
+   - Started with incorrect primary key constraints
+   - Had to modify the schema multiple times for proper idempotency
+   - Needed to ensure exact timestamp formats matched requirements
+7. Default run date handling:
+   - Initially defaulted to current date
+   - Had to implement logic to find last available date
+   - Required multiple iterations to handle edge cases properly
 
 #### Final Improvements
 1. Added comprehensive logging
@@ -96,12 +112,12 @@ logger.info(f"Data array type: {data_values.dtype}")
 
 The development process was iterative, with each error leading to a better understanding of the system. The most valuable lesson was the importance of understanding the data format and coordinate systems thoroughly before attempting to process the data. The AI assistant was particularly helpful in providing different approaches to solving problems, but often needed guidance in understanding the specific requirements of weather data processing.
 
-At the very end, I had the AI make a checklist of everything that had to be satisfied in the comity-coding-challenge.md to make sure that every detail was accounted for.
+At the very end, I had the AI look at comity-coding-challenge.md and make a checklist of 50 items that had to be satisfied to make sure that every detail was accounted for. Final prompt (which, in Cursor's agent mode took like 10 minutes)
 
 ```
 
 
-good. now double check. make sure every variable is accounted for, every url string is exact, and the deliverables are good.
+good. now double check each item in that list. make sure things like every variable is accounted for, every url string is exact, and the deliverables are good. don't fuck up.
 ```
 
 ### Q: Describe how you would deploy your solution as a production service. How would you schedule the ingestion routines as new data becomes available? What data storage technology would you use to make the data more readily available to analysts and researchers? What monitoring would you put in place to ensure system correctness?
