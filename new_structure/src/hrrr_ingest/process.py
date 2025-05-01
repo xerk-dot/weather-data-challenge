@@ -8,8 +8,8 @@ import logging
 from datetime import datetime, timedelta
 import pandas as pd
 
-from config import SUPPORTED_VARIABLES
-from database import check_existing_data
+from .config import SUPPORTED_VARIABLES
+from .database import check_existing_data
 
 logger = logging.getLogger(__name__)
 

@@ -13,14 +13,17 @@ A command-line tool for ingesting and storing HRRR (High-Resolution Rapid Refres
 
 ## Installation
 
-1. Clone the repository:```bash
+1. Clone the repository, set up virtual environment:```bash
 git clone <repository-url>
-cd hrrr-ingest
+cd src/hrrr_ingest
+python3 -m venv venv
+source venv/bin/activate
 ```
+
 
 2. Install dependencies:
 ```bash
-pip install -e .
+pip3 install -e .
 ```
 
 ### Application Level
@@ -91,15 +94,20 @@ CREATE TABLE hrrr_forecasts (
 
 1. Create a virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 2. Install development dependencies:
 ```bash
-pip install -e ".[dev]"
+pip install -e .
 ```
 
+3. Try a command
+
+```bash
+hrrr_ingest points.txt --variables surface_pressure,surface_roughness,visible_beam_downward_solar_flux,visible_diffuse_downward_solar_flux,temperature_2m,dewpoint_2m,relative_humidity_2m,u_component_wind_10m,v_component_wind_10m,u_component_wind_80m,v_component_wind_80m --num-hours 1
+```
 ### Testing
 
 Run tests with:
@@ -125,7 +133,7 @@ This means that:
 - The database will reject any duplicate entries due to the primary key constraint
 - The application will skip processing points that already have data, making the process more efficient
 
-## License
+cd new_structure && PYTHONPATH=src python3 -m hrrr_ingest.cli points.txt --variables temperature_2m,dewpoint_2m --num-hours 1
 
-[Your chosen license]
+
 

@@ -8,10 +8,10 @@ from typing import List, Tuple
 import sys
 from io import StringIO
 
-from config import SUPPORTED_VARIABLES, DEFAULT_RUN_HOUR
-from database import init_database, insert_forecast_data
-from download import download_grib_file, check_file_exists
-from process import process_grib_file
+from .config import SUPPORTED_VARIABLES, DEFAULT_RUN_HOUR
+from .database import init_database, insert_forecast_data
+from .download import download_grib_file, check_file_exists
+from .process import process_grib_file
 
 def setup_logging(stream=None):
     """Configure logging with optional custom stream."""

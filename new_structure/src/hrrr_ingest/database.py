@@ -5,7 +5,11 @@ from pathlib import Path
 import pandas as pd
 from typing import List, Dict, Any, Optional
 
-from config import DB_PATH, TABLE_NAME
+from .config import DB_PATH, TABLE_NAME
+
+def get_connection() -> duckdb.DuckDBPyConnection:
+    """Get a connection to the DuckDB database."""
+    return duckdb.connect(str(DB_PATH))
 
 def init_database(conn: Optional[duckdb.DuckDBPyConnection] = None) -> None:
     """Initialize the DuckDB database with required schema."""

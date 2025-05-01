@@ -1,5 +1,5 @@
 [project]
-name = "hrrr-ingest"
+name = "hrrr_ingest"
 version = "0.1.0"
 description = "CLI tool for ingesting HRRR weather forecast data"
 requires-python = ">=3.8"
@@ -12,6 +12,18 @@ dependencies = [
     "pandas>=2.0.0",
     "numpy>=1.24.0",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+hrrr_ingest = "hrrr_ingest.cli:main"
 
 [build-system]
 requires = ["hatchling"]

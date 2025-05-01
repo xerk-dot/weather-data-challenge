@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Optional
 import logging
 
-from config import HRRR_BUCKET
+from .config import HRRR_BUCKET
 
 logger = logging.getLogger(__name__)
 
